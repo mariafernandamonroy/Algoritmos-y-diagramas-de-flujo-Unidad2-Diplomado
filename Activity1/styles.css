@@ -1,0 +1,42 @@
+body{
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);    
+}
+.container{
+  margin: 10vh 30vh; 
+  padding: auto;
+  border-radius: 15px 15px;
+  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.2);
+  height: 80vh;
+  font-family: Verdana;
+  text-align:center;
+  background: rgba(255, 255, 255, 0.54)
+}
+.description{
+  text-align:justify;
+  padding: 10px 50px;
+}
+.greater, .minior{
+  border-radius: 5px 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  width: 50%;
+  height: 5vh;
+  margin: 0% 25%; 
+}
+input{
+  margin: 1vh;
+  border: none;
+  border-radius: 5px 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.button{
+  height: 6vh;
+  width: 10vh;
+}
+.button:hover {background-color: #c6c6c6}
+
+.button:active {
+  background-color: #c6c6c6;
+  box-shadow: 0 5px rgb(137, 137, 137);
+  transform: translateY(4px);
+}
