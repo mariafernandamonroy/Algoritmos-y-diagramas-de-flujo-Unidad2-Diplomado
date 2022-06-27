@@ -38,3 +38,4 @@ boton.addEventListener("click", function () {
     minior.textContent = miniorValue;
   }
 });
+
