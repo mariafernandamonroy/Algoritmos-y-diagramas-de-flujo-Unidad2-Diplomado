@@ -4,36 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Número mayor</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <title>Actividad1</title>
   </head>
   <body>
-    <h1>Actividad1</h1>
-    <div>
-      <label for="number1">Ingrese A</label>
-      <input type="number" id="number1" />
-    </div>
-    <div>
-      <label for="number2">Ingrese B</label>
-      <input type="number" id="number2" />
-    </div>
-    <div>
-      <label for="number1">Ingrese C</label>
-      <input type="number" id="number3" />
-    </div>
-    <div>
-      <label for="number2">Ingrese D</label>
-      <input type="number" id="number4" />
-    </div>
-    <div>
-      <input type="button" id="boton" value="Enviar" />
-    </div>
-    <div>
-      <h3>Número mayor</h3>
-      <p id="greaterResult"></p>
-    </div>
-    <div>
-      <h3>Número menor</h3>
-      <p id="miniorResult"></p>
+    <div class="container">
+      <h1>Encuentre el número mayor y menor</h1>
+      <h3>Descripción de la actividad 2:</h3>
+      <p class="description">
+        Leer cuatro valores númericos y almacenarlos en las variables A,B,C,D
+        respectivamente. El algoritmo debe impreimir cual es el mayor valor y
+        cual es el menor valor. Recuerde verificar que los cuatro valores
+        introducidos por el tecaldo sean valores distintos. Crear un mensaje de
+        alerta en caso de que se detecte la introducción de valores iguales.
+      </p>
+      <h3>Solución de a actividad 2:</h3>
+      <p class="indication">Ingrese cuatro valores numéricos a cotinuación</p>
+      <div>
+        <label for="number1">Ingrese A</label>
+        <input type="number" id="number1" />
+      </div>
+      <div>
+        <label for="number2">Ingrese B</label>
+        <input type="number" id="number2" />
+      </div>
+      <div>
+        <label for="number1">Ingrese C</label>
+        <input type="number" id="number3" />
+      </div>
+      <div>
+        <label for="number2">Ingrese D</label>
+        <input type="number" id="number4" />
+      </div>
+      <div>
+        <input class="button" type="button" id="boton" value="Enviar" />
+      </div>
+      <div>
+        <h3>Número mayor</h3>
+        <p class="greater" id="greaterResult"></p>
+      </div>
+      <div>
+        <h3>Número menor</h3>
+        <p class="minior" id="miniorResult"></p>
+      </div>
     </div>
     <script src="./Comparicion.js"></script>
   </body>
