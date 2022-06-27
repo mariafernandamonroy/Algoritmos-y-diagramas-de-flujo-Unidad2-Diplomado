@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./styles.css" rel="stylesheet" type="text/css" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
@@ -13,80 +13,88 @@
     <title>Actividad 1</title>
   </head>
   <body>
-    <h1>Valor total de las materias con descuento</h1>
-    <h3>Descripción de la actividad 1:</h3>
-    <p>
-      Desarrollar un algortimo que permita ingresar nombre de un estudiante,
-      cantidad de materias a matricular, valor de cada materia, tener en cuenta
-      el valor de la papelería que tiene un costo fijo de $20.000 y el carné con
-      valor de $8.000. Realizar un descuento del 20% sobre el costo de las
-      materias. Por medio del algoritmo imprimir le valor total de las materias
-      que matriculó el estudiante con el descuento del 20% más los costos fijos.
-    </p>
-    <h3>Solución de a actividad 1:</h3>
-    <p class="indication">
-      A contunuación registre su nombre y las materias a matricular:
-    </p>
-    <form id="inputName">
-      <div>
-        <input
-          class="input"
-          type="text"
-          id="name"
-          placeholder="Nombre del estudiante"
-        />
-      </div>
-    </form>
-
-    <form action="" id="form">
-      <div class="field is-grouped">
-        <div class="control">
+    <div class="container">
+      <h1 class="title is-1">Valor total de las materias con descuento</h1>
+      <h3 class="title is-3">Descripción de la actividad 1:</h3>
+      <p class="description">
+        Desarrollar un algortimo que permita ingresar nombre de un estudiante,
+        cantidad de materias a matricular, valor de cada materia, tener en
+        cuenta el valor de la papelería que tiene un costo fijo de $20.000 y el
+        carné con valor de $8.000. Realizar un descuento del 20% sobre el costo
+        de las materias. Por medio del algoritmo imprimir le valor total de las
+        materias que matriculó el estudiante con el descuento del 20% más los
+        costos fijos.
+      </p>
+      <h3 class="title is-3">Solución de a actividad 1:</h3>
+      <p class="indication">
+        A contunuación registre su nombre y las materias a matricular:
+      </p>
+      <form id="inputName">
+        <div>
           <input
             class="input"
-            name="subject"
             type="text"
-            placeholder="Materia"
+            id="name"
+            placeholder="Nombre del estudiante"
           />
         </div>
-        <div class="control">
-          <input class="input" name="value" type="number" placeholder="Valor" />
+      </form>
+
+      <form action="" id="form">
+        <div class="field is-grouped">
+          <div class="control">
+            <input
+              class="input"
+              name="subject"
+              type="text"
+              placeholder="Materia"
+            />
+          </div>
+          <div class="control">
+            <input
+              class="input"
+              name="value"
+              type="number"
+              placeholder="Valor"
+            />
+          </div>
+          <div class="control">
+            <button id="btnAdd" type="button" class="button is-danger">
+              <span class="icon">
+                <i><img src="images/plus.png" /></i>
+              </span>
+            </button>
+          </div>
+          <div class="control">
+            <button id="btnSend" type="button" class="button is-info">
+              <span class="icon">
+                <i>Enviar</i>
+              </span>
+            </button>
+          </div>
         </div>
-        <div class="control">
-          <button id="btnAdd" type="button" class="button is-danger">
-            <span class="icon">
-              <i><img src="images/plus.png" /></i>
-            </span>
-          </button>
+        <div class="field is-grouped">
+          <div class="control">
+            <label> Nombre: </label>
+          </div>
+          <div class="control">
+            <p id="nameP"></p>
+          </div>
         </div>
-        <div class="control">
-          <button id="btnSend" type="button" class="button is-info">
-            <span class="icon">
-              <i>Enviar</i>
-            </span>
-          </button>
+        <div class="field is-grouped">
+          <div class="control">
+            <label>
+              El valor de la matricula con el descuento aplicado es:
+            </label>
+          </div>
+          <div class="control">
+            <p id="result"></p>
+          </div>
         </div>
-      </div>
-      <div class="field is-grouped">
-        <div class="control">
-          <label> Nombre: </label>
-        </div>
-        <div class="control">
-          <p id="nameP"></p>
-        </div>
-      </div>
-      <div class="field is-grouped">
-        <div class="control">
-          <label>
-            El valor de la matricula con el descuento aplicado es:
-          </label>
-        </div>
-        <div class="control">
-          <p id="result"></p>
-        </div>
-      </div>
-    </form>
-    <hr />
-    <div id="divElements"></div>
+      </form>
+      <hr />
+      <div id="divElements"></div>
+    </div>
     <script src="./Subjects.js"></script>
   </body>
 </html>
